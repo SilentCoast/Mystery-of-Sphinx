@@ -1,5 +1,6 @@
 package com.template;
 
+import android.app.ActionBar;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
@@ -30,6 +31,9 @@ public class MainActivity extends AppCompatActivity {
                 WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS
         );
 
+        View decorView = getWindow().getDecorView();
+        decorView.setSystemUiVisibility(View.SYSTEM_UI_FLAG_FULLSCREEN);
+
         btnPlay = findViewById(R.id.btnPlay);
         btnPlay.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -40,6 +44,12 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
+
+
+    }
+
+    @Override
+    public void onBackPressed() {
 
     }
 

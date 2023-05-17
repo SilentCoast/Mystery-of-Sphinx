@@ -36,6 +36,12 @@ public class GameActivity extends AppCompatActivity {
         int randomMoney = rand.nextInt(((betAmount*2) - 1) + 1);
         int moneyAfter =Integer.valueOf(txtMoney.getText().toString());
         txtMoney.setText(String.valueOf(moneyAfter + randomMoney));
+        if(betAmount<=randomMoney){
+            Toast.makeText(getApplicationContext(),"You win " + (randomMoney-betAmount) +" " + new String(Character.toChars(0x1F603)),Toast.LENGTH_SHORT).show();
+        }
+        else{
+            Toast.makeText(getApplicationContext(),"You lost "+(betAmount-randomMoney)+" " + new String(Character.toChars(0x1F612)),Toast.LENGTH_SHORT).show();
+        }
     }
 
     @Override
@@ -47,6 +53,10 @@ public class GameActivity extends AppCompatActivity {
                 WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
                 WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS
         );
+
+        View decorView = getWindow().getDecorView();
+        decorView.setSystemUiVisibility(View.SYSTEM_UI_FLAG_FULLSCREEN);
+
         txtMoney = findViewById(R.id.txtMoney);
         txtBet   = findViewById(R.id.txtBet);
 
