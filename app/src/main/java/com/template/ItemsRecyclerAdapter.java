@@ -5,7 +5,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -37,11 +36,9 @@ public class ItemsRecyclerAdapter extends RecyclerView.Adapter<ItemsRecyclerAdap
         return items.get(id);
     }
 
-
     @Override
     public int getItemCount() {
-        return  Integer.MAX_VALUE;
-        //return items.size();
+        return  Integer.MAX_VALUE; // so the loop doesn't end
     }
 
     public void setClicklistener(ItemClickListener itemClickListener){

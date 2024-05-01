@@ -4,7 +4,6 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.ImageButton;
@@ -23,9 +22,9 @@ import java.util.Random;
 public class GameActivity extends AppCompatActivity {
     TextView txtMoney;
     TextView txtBet;
-    boolean isRecyclerView1StopScrolling =true;
-    boolean isRecyclerView2StopScrolling =true;
-    boolean isRecyclerView3StopScrolling =true;
+    boolean isRecyclerView1StopScrolling = true;
+    boolean isRecyclerView2StopScrolling = true;
+    boolean isRecyclerView3StopScrolling = true;
     String TAG = "MyDebug";
     AsyncTask<Void,Void,Void> MyAsyncTask;
     int offset = -60;
@@ -87,9 +86,6 @@ public class GameActivity extends AppCompatActivity {
         ItemsRecyclerAdapter adapter3 = new ItemsRecyclerAdapter(this,items);
         recyclerView3.setAdapter(adapter3);
         recyclerView3.getLayoutManager().scrollToPosition(Integer.MAX_VALUE/2-100);
-
-
-
 
         ImageButton btnSpin = findViewById(R.id.btnSpin);
         btnSpin.setOnClickListener(new View.OnClickListener() {
@@ -202,7 +198,6 @@ public class GameActivity extends AppCompatActivity {
             }
         });
 
-
         ImageButton btnBetPlus = findViewById(R.id.btnBetPlus);
         btnBetPlus.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -249,10 +244,8 @@ public class GameActivity extends AppCompatActivity {
                     }
                 });
                 customDialogClass.show();
-
             }
         });
-
     }
 
     @Override

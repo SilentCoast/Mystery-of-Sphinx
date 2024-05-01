@@ -27,7 +27,6 @@ public class CustomDialogClass extends Dialog implements
         btnClaim = findViewById(R.id.btnClaimBonus);
 
         btnClaim.setOnClickListener(this);
-
     }
 
     public void setClicklistener(CustomDialogClass.ClickListener clickListener){
@@ -39,7 +38,6 @@ public class CustomDialogClass extends Dialog implements
         if(v.getId()==R.id.btnClaimBonus) {
             if(mClickListener!=null) mClickListener.onClick(v);
         }
-
     }
     public interface ClickListener{
         void onClick(View view);

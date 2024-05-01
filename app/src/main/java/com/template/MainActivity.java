@@ -1,25 +1,20 @@
 package com.template;
 
-import android.app.ActionBar;
 import android.content.Intent;
-import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
 import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ProgressBar;
-import android.widget.QuickContactBadge;
 import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
-    String TAG = "MyDebug";
     ImageButton btnPlay;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -42,15 +37,11 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-
-
-
     }
 
     @Override
     public void onBackPressed() {
-
+        //do nothing
     }
 
     @Override
@@ -66,8 +57,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void run() {
                 progressBar.setProgress(progressBar.getProgress()+5);
-                txtProgressBar.setText(String.valueOf(progressBar.getProgress())+"%");
-                Log.d(TAG, "run: " + progressBar.getProgress());
+                txtProgressBar.setText(progressBar.getProgress() +"%");
+
                 if(progressBar.getProgress()<100){
                 recreate();
 
@@ -79,8 +70,5 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         },10);
-
-
     }
-
 }
