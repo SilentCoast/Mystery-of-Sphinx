@@ -1,13 +1,7 @@
 # Mystery of Sphinx
 Welcome to the Mystery of Sphinx! This Android app lets you experience the thrill of playing a classic slot machine right on your device. Place your bets, spin the reels, and see if luck is on your side!
 
-| 
-![Loading Screen](https://github.com/SilentCoast/CasinoSlots/assets/94042423/5b583df1-69f2-42ba-9d9c-9b4a353add6d) 
-|
-![Game Screen](https://github.com/SilentCoast/CasinoSlots/assets/94042423/51efb533-33cf-4035-bc55-a22ad9a6fe1d) 
-|
-![Bonus Dialog](https://github.com/SilentCoast/CasinoSlots/assets/94042423/ed218460-afcb-4577-a17e-86ed6a405ab6) 
-|
+| ![Loading Screen](https://github.com/SilentCoast/CasinoSlots/assets/94042423/5b583df1-69f2-42ba-9d9c-9b4a353add6d) | ![Game Screen](https://github.com/SilentCoast/CasinoSlots/assets/94042423/51efb533-33cf-4035-bc55-a22ad9a6fe1d) | ![Bonus Dialog](https://github.com/SilentCoast/CasinoSlots/assets/94042423/ed218460-afcb-4577-a17e-86ed6a405ab6) |
 | --- | --- | --- |
 
 ## Features
