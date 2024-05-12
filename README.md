@@ -25,6 +25,3 @@ Welcome to the Mystery of Sphinx! This Android app lets you experience the thril
 
 ## Credits
 This project was developed by me alone. Feel free to contribute by submitting bug reports, feature requests, or pull requests.
-
-## License
-This project is licensed under the [MIT License](LICENSE).
