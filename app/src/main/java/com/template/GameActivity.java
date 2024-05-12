@@ -25,7 +25,6 @@ public class GameActivity extends AppCompatActivity {
     boolean isRecyclerView1StopScrolling = true;
     boolean isRecyclerView2StopScrolling = true;
     boolean isRecyclerView3StopScrolling = true;
-    String TAG = "MyDebug";
     AsyncTask<Void,Void,Void> MyAsyncTask;
     int offset = -60;
     int bonusMoney = 500;
@@ -123,8 +122,6 @@ public class GameActivity extends AppCompatActivity {
                 recyclerView1.smoothScrollToPosition(randomInt);
                 recyclerView2.smoothScrollToPosition(randomInt2);
                 recyclerView3.smoothScrollToPosition(randomInt3);
-
-
 
                 recyclerView1.addOnScrollListener(new RecyclerView.OnScrollListener() {
                     @Override
@@ -238,7 +235,7 @@ public class GameActivity extends AppCompatActivity {
                 customDialogClass.setClicklistener(new CustomDialogClass.ClickListener() {
                     @Override
                     public void onClick(View view) {
-                        int moneyAfter =Integer.valueOf(txtMoney.getText().toString());
+                        int moneyAfter =Integer.parseInt(txtMoney.getText().toString());
                         txtMoney.setText(String.valueOf(moneyAfter + bonusMoney));
                         customDialogClass.dismiss();
                     }

@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
-import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.ImageButton;
@@ -53,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
         Object object = new Object();
 
         Handler handler = new Handler((Looper.getMainLooper()));
+        //loading visuals
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
